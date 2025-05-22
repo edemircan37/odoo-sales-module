@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_not_defteri_tree" model="ir.ui.view">
+        <field name="name">not.defteri.tree</field>
+        <field name="model">not.defteri</field>
+        <field name="arch" type="xml">
+            <list string="Notlar">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_not_defteri_form" model="ir.ui.view">
+        <field name="name">not.defteri.form</field>
+        <field name="model">not.defteri</field>
+        <field name="arch" type="xml">
+            <form string="Not Defteri">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="note" placeholder="Not içeriğini buraya yazın..."/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_not_defteri" model="ir.actions.act_window">
+    <field name="name">Not Defteri</field>
+    <field name="res_model">not.defteri</field>
+    <field name="view_mode">list,form</field>
+    <field name="type">ir.actions.act_window</field>
+        </record>
+
+</odoo>

@@ -1,0 +1,61 @@
+2025-05-21 20:10:48,757 12992 INFO ? odoo: Odoo version 18.0-20250521 
+2025-05-21 20:10:48,758 12992 INFO ? odoo: Using configuration file at C:\Odoo18\server\odoo.conf 
+2025-05-21 20:10:48,758 12992 INFO ? odoo: addons paths: ['C:\\Odoo18\\server\\odoo\\addons', 'c:\\odoo18\\sessions\\addons\\18.0', 'c:\\odoo18\\server\\odoo\\addons'] 
+2025-05-21 20:10:48,758 12992 INFO ? odoo: database: openpg@localhost:5432 
+2025-05-21 20:10:49,995 12992 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Odoo18\thirdparty\wkhtmltopdf.exe 
+2025-05-21 20:10:50,013 12992 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-05-21 20:10:52,521 12992 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-21 20:10:52,521 12992 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-21 20:11:03,301 2128 INFO ? odoo: Odoo version 18.0-20250521 
+2025-05-21 20:11:03,301 2128 INFO ? odoo: Using configuration file at C:\Odoo18\server\odoo.conf 
+2025-05-21 20:11:03,301 2128 INFO ? odoo: addons paths: ['C:\\Odoo18\\server\\odoo\\addons', 'c:\\odoo18\\sessions\\addons\\18.0', 'c:\\odoo18\\server\\odoo\\addons'] 
+2025-05-21 20:11:03,301 2128 INFO ? odoo: database: openpg@localhost:5432 
+2025-05-21 20:11:03,471 2128 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Odoo18\thirdparty\wkhtmltopdf.exe 
+2025-05-21 20:11:03,485 2128 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-05-21 20:11:03,789 2128 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-GEJSLGQ:8069 
+2025-05-21 20:54:09,642 2128 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-21 20:54:09,649 2128 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-21 20:54:10,811 2128 INFO ? odoo.modules.loading: loading 77 modules... 
+2025-05-21 20:54:25,779 2128 INFO ? odoo.modules.loading: 77 modules loaded in 14.97s, 0 queries (+0 extra) 
+2025-05-21 20:54:25,922 2128 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-21 20:54:25,930 2128 INFO ? odoo.modules.registry: Registry loaded in 16.355s 
+2025-05-21 20:54:25,931 2128 INFO odoomre odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-21 20:54:25,999 2128 INFO odoomre werkzeug: 127.0.0.1 - - [21/May/2025 20:54:25] "GET / HTTP/1.1" 303 - 22 0.159 16.376
+2025-05-21 20:54:46,572 2128 WARNING odoomre odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "C:\Odoo18\server\odoo\addons\base\models\ir_cron.py", line 132, in _process_jobs
+    with db.cursor() as cron_cr:
+         ^^^^^^^^^^^
+  File "C:\Odoo18\server\odoo\sql_db.py", line 796, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Odoo18\server\odoo\sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "C:\Odoo18\python\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Odoo18\server\odoo\tools\func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Odoo18\server\odoo\sql_db.py", line 723, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Odoo18\python\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd6 in position 61: invalid continuation byte
+2025-05-21 21:14:46,045 2128 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-21 21:14:46,046 2128 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-21 21:14:46,377 2128 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 3 connections  
+2025-05-21 21:15:18,292 6892 INFO ? odoo: Odoo version 18.0-20250521 
+2025-05-21 21:15:18,293 6892 INFO ? odoo: Using configuration file at C:\Odoo18\server\odoo.conf 
+2025-05-21 21:15:18,293 6892 INFO ? odoo: addons paths: ['C:\\Odoo18\\server\\odoo\\addons', 'c:\\odoo18\\sessions\\addons\\18.0', 'c:\\odoo18\\server\\odoo\\addons'] 
+2025-05-21 21:15:18,293 6892 INFO ? odoo: database: openpg@localhost:5432 
+2025-05-21 21:15:18,626 6892 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Odoo18\thirdparty\wkhtmltopdf.exe 
+2025-05-21 21:15:18,644 6892 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-05-21 21:15:21,062 6892 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-GEJSLGQ:8069 
+2025-05-21 21:15:25,143 6892 INFO ? odoo.sql_db: Connection to the database failed 
+2025-05-21 21:15:29,150 6892 INFO ? odoo.sql_db: Connection to the database failed 
+2025-05-21 22:18:11,770 6892 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-21 22:18:11,787 6892 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 

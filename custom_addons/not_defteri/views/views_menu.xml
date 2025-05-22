@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <menuitem id="menu_not_defteri_root" name="Notlar" sequence="10"/>
+    <menuitem id="menu_not_defteri" name="Not Defteri" parent="menu_not_defteri_root" action="action_not_defteri"/>
+</odoo>
