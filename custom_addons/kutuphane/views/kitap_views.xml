@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Form görünümü -->
+    <record id="view_kutuphane_kitap_form" model="ir.ui.view">
+        <field name="name">kutuphane.kitap.form</field>
+        <field name="model">kutuphane.kitap</field>
+        <field name="arch" type="xml">
+            <form string="Kitap">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="yazar"/>
+                        <field name="yayin_tarihi"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Menüye erişim sağlayan Action -->
+    <record id="action_kutuphane_kitap" model="ir.actions.act_window">
+        <field name="name">Kitaplar</field>
+        <field name="res_model">kutuphane.kitap</field>
+        <field name="view_mode">form</field>
+        <field name="type">ir.actions.act_window</field>
+    </record>
+
+    <!-- Menü öğesi - Bu sefer 2 farklı xml şeklinde oluşturmak yerine tek bir xml dosyasında -->
+    <menuitem id="menu_kutuphane_root" name="Kütüphane"/>
+    <menuitem id="menu_kutuphane_kitaplar" name="Kitaplar" parent="menu_kutuphane_root" action="action_kutuphane_kitap"/>
+</odoo>
